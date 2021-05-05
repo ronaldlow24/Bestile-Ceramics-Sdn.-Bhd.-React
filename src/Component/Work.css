@@ -1,0 +1,14 @@
+.title {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.workContainer {
+  margin: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .workContainer {
+    margin: unset;
+  }
+}

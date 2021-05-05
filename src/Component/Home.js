@@ -128,7 +128,7 @@ function Home() {
         </div>
         <div className="home-item" data-aos="fade-up">
           <div className="home-item-item">
-            <div>
+            <div style={{ width: "100vw" }}>
               <h6 className="title">Our Client</h6>
 
               <div className={classes.root}>

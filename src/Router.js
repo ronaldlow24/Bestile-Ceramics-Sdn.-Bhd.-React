@@ -7,6 +7,7 @@ import { makeStyles } from "@material-ui/core/styles";
 // Components
 const Home = lazy(() => import("./Component/Home"));
 const Work = lazy(() => import("./Component/Work"));
+const Contact = lazy(() => import("./Component/Contact"));
 
 const useStyles = makeStyles((theme) => ({
   backdrop: {
@@ -30,6 +31,7 @@ const Router = () => {
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/work" component={Work} exact />
+          <Route path="/contact" component={Contact} exact />
         </Switch>
       </Suspense>
     </>

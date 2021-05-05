@@ -11,7 +11,6 @@ function App() {
       <Header />
       <Router />
       <Footer />
-
       <ScrollToTop smooth />
     </BrowserRouter>
   );

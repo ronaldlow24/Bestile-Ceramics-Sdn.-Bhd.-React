@@ -135,7 +135,7 @@ function Home() {
                 <GridList className={classes.gridList} cols={2.5}>
                   {customerData.map((tile, id) => (
                     <GridListTile key={id}>
-                      <img src={tile.img} alt={tile.title} />
+                      <img src={tile.src} alt={tile.title} />
                       <GridListTileBar
                         title={tile.title}
                         classes={{

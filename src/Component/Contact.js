@@ -10,7 +10,7 @@ import EmailIcon from "@material-ui/icons/Email";
 function Contact() {
   return (
     <>
-      <div className="contactContainer">
+      <div className="contactContainer" data-aos="zoom-in">
         <div className="form">
           <h1>Contact information</h1>
           <p>We're open for any suggestion or just to have a chat.</p>
@@ -19,7 +19,7 @@ function Contact() {
           <h6>Address</h6>
           <p>
             <a
-              style={{ color: "blue" }}
+              style={{ color: "white", textDecoration: "underline" }}
               rel="noreferrer"
               target="_blank"
               href="https://scontent.fmkz1-1.fna.fbcdn.net/v/t31.18172-8/19023635_1079927178807653_4585373954544358200_o.jpg?_nc_cat=106&ccb=1-3&_nc_sid=e3f864&_nc_ohc=vZxLswDMeiIAX_pKXNY&_nc_ht=scontent.fmkz1-1.fna&oh=c5f1e93c10e86c399e55da72d24b4f2b&oe=60B6D527"

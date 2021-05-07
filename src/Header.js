@@ -5,6 +5,7 @@ import { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import projectData from "./Component/projectData";
 
 function Header() {
   const [expanded, setExpanded] = useState(false);
@@ -38,36 +39,15 @@ function Header() {
               WORK
             </Nav.Link>
 
-            <NavDropdown title="PROJECT" id="collasible-nav-dropdown"  alignRight  onClick={(e) => e.stopPropagation()}>
+            <NavDropdown title="PROJECT LINK" id="collasible-nav-dropdown"  alignRight  onClick={(e) => e.stopPropagation()}>
               <div onClick={() => setExpanded(false)}>
-              <NavDropdown.Item as={Link} to="/project/786051444861896">Furnising Design</NavDropdown.Item>
-              <NavDropdown.Divider />
 
-              <NavDropdown.Item as={Link} to="/project/958915947575444">Pebble wash</NavDropdown.Item>
-              <NavDropdown.Divider />
-
-              <NavDropdown.Item as={Link} to="/project/787373388063035">Natural Stone</NavDropdown.Item>
-              <NavDropdown.Divider />
-
-              <NavDropdown.Item as={Link} to="/project/810204809113226">Government Project - Jakoa Kluang</NavDropdown.Item>
-              <NavDropdown.Divider />
-
-              <NavDropdown.Item as={Link} to="/project/805945342872506">Bath Talk</NavDropdown.Item>
-              <NavDropdown.Divider />
-
-              <NavDropdown.Item as={Link} to="/project/787446658055708">Kitchen Cabinet Design</NavDropdown.Item>
-              <NavDropdown.Divider />
-
-              <NavDropdown.Item as={Link} to="/project/807734999360207">25th Storey Condominium Project</NavDropdown.Item>
-              <NavDropdown.Divider />
-
-              <NavDropdown.Item as={Link} to="/project/805940029539704">Swimming Pool</NavDropdown.Item>
-              <NavDropdown.Divider />
-
-              <NavDropdown.Item as={Link} to="/project/786141974852843">Istana Besar Johor</NavDropdown.Item>
-              <NavDropdown.Divider />
-
-              <NavDropdown.Item as={Link} to="/project/787370128063361">Natural Stone 2</NavDropdown.Item>
+              {projectData.map((projectData, id) => (
+                <div key={id}>
+                  <NavDropdown.Item  as={Link} to={`/project/${projectData.albumID}`}>{projectData.albumTitle}</NavDropdown.Item>
+                  <NavDropdown.Divider />
+                </div>
+              ))}
               </div>
         
               

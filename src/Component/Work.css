@@ -10,8 +10,16 @@
   margin-bottom: 10%;
 }
 
+.card {
+  margin-top: 20px;
+  max-width: 20vw;
+}
+
 @media only screen and (max-width: 600px) {
   .workContainer {
     margin: unset;
+  }
+  .card {
+    min-width: 100vw;
   }
 }

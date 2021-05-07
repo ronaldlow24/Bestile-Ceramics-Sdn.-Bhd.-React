@@ -5,8 +5,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import GridList from "@material-ui/core/GridList";
 import GridListTile from "@material-ui/core/GridListTile";
 import GridListTileBar from "@material-ui/core/GridListTileBar";
-import customerData from "./customerData";
 import { Link } from "react-router-dom";
+import workData from "./workData";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -144,7 +144,7 @@ function Home() {
 
               <div className={classes.root}>
                 <GridList className={classes.gridList} cols={2.5}>
-                  {customerData.map((tile, id) => (
+                  {workData.map((tile, id) => (
                     <GridListTile key={id}>
                       <img src={tile.src} alt={tile.title} />
                       <GridListTileBar

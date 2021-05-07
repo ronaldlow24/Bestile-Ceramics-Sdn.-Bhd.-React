@@ -1,7 +1,5 @@
 import Carousel from "react-bootstrap/Carousel";
 import "./Work.css";
-import Gallery from "react-photo-gallery";
-import galleryData from "./galleryData";
 import workData from "./workData";
 
 import "./AOS";
@@ -23,7 +21,6 @@ function Work() {
             </Carousel.Item>
           ))}
         </Carousel>
-        {/* <Gallery photos={galleryData} direction={"column"} /> */}
       </div>
     </>
   );

@@ -59,6 +59,10 @@
   border: 10px solid rgb(255, 255, 255);
 }
 
+.home-item:first-child {
+  border: 2px solid white;
+}
+
 .home-item:first-child::before {
   display: block; /*missing prop*/
   position: absolute;

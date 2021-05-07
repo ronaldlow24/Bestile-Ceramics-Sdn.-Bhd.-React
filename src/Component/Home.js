@@ -1,5 +1,4 @@
 import "./Home.css";
-import { Player } from "@lottiefiles/react-lottie-player";
 //for animation on scroll
 import "./AOS";
 import { makeStyles } from "@material-ui/core/styles";
@@ -7,6 +6,7 @@ import GridList from "@material-ui/core/GridList";
 import GridListTile from "@material-ui/core/GridListTile";
 import GridListTileBar from "@material-ui/core/GridListTileBar";
 import customerData from "./customerData";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -43,10 +43,13 @@ function Home() {
               <h6 className="title">
                 WE PROVIDE ULTIMATE FLOORING AND PAVING SERVICES.
               </h6>
-              <p className="paragraph">
+              <p to="/work" className="paragraph">
                 We make it a priority to offer flexible services to accommodate
                 your needs
               </p>
+              <Link to="/work" className="paragraph">
+                Check out our work -{">"}
+              </Link>
             </div>
           </div>
           <div className="home-item-item">

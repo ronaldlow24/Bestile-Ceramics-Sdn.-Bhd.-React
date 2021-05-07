@@ -32,9 +32,7 @@ function Header() {
             <Nav.Link as={Link} to="/">
               HOME
             </Nav.Link>
-            <Nav.Link as={Link} to="/product">
-              PRODUCT
-            </Nav.Link>
+
             <Nav.Link as={Link} to="/work">
               WORK
             </Nav.Link>

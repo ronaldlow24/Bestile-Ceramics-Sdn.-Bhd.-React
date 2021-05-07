@@ -2,7 +2,6 @@ import "./Home.css";
 import { Player } from "@lottiefiles/react-lottie-player";
 //for animation on scroll
 import "./AOS";
-
 import { makeStyles } from "@material-ui/core/styles";
 import GridList from "@material-ui/core/GridList";
 import GridListTile from "@material-ui/core/GridListTile";
@@ -32,6 +31,9 @@ const useStyles = makeStyles((theme) => ({
 function Home() {
   const classes = useStyles();
 
+  const imgURL =
+    "https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/Articles/types-of-flooring-hero-A.jpg";
+
   return (
     <>
       <div className="home-container">
@@ -48,12 +50,18 @@ function Home() {
             </div>
           </div>
           <div className="home-item-item">
-            <Player
+            {/* <Player
               autoplay
               loop
               src="https://assets9.lottiefiles.com/packages/lf20_3giqgq7t.json"
               style={{ height: "300px", width: "300px" }}
-            ></Player>
+            ></Player> */}
+            <img
+              src={`${imgURL}`}
+              alt="ERROR"
+              className="homeImage"
+              style={{ width: "100%", height: "80%" }}
+            />
           </div>
         </div>
         <div

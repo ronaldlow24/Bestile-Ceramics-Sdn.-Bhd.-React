@@ -18,13 +18,12 @@ function Work() {
                 className="d-block w-100"
                 src={workData.src}
                 alt={workData.title}
-                height="500px"
+                height="700px"
               />
             </Carousel.Item>
           ))}
         </Carousel>
-        <h1 className="title">Gallery</h1>
-        <Gallery photos={galleryData} direction={"column"} />
+        {/* <Gallery photos={galleryData} direction={"column"} /> */}
       </div>
     </>
   );

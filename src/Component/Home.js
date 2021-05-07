@@ -49,7 +49,7 @@ function Home() {
                 your needs
               </p>
               <Link to="/work" className="paragraph">
-                Check out our work{" >"}
+                Check out our best work{" >"}
               </Link>
             </div>
           </div>

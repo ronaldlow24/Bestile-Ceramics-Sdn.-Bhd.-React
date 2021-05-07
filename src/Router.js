@@ -8,6 +8,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const Home = lazy(() => import("./Component/Home"));
 const Work = lazy(() => import("./Component/Work"));
 const Contact = lazy(() => import("./Component/Contact"));
+const Project = lazy(() => import("./Component/Project"));
 
 const useStyles = makeStyles((theme) => ({
   backdrop: {
@@ -32,6 +33,8 @@ const Router = () => {
           <Route path="/" component={Home} exact />
           <Route path="/work" component={Work} exact />
           <Route path="/contact" component={Contact} exact />
+          <Route path="/project/:albumID" component={Project} />
+
         </Switch>
       </Suspense>
     </>

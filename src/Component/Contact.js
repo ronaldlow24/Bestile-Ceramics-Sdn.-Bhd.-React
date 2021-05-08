@@ -24,7 +24,8 @@ function Contact() {
               target="_blank"
               href="https://scontent.fmkz1-1.fna.fbcdn.net/v/t31.18172-8/19023635_1079927178807653_4585373954544358200_o.jpg?_nc_cat=106&ccb=1-3&_nc_sid=e3f864&_nc_ohc=vZxLswDMeiIAX_pKXNY&_nc_ht=scontent.fmkz1-1.fna&oh=c5f1e93c10e86c399e55da72d24b4f2b&oe=60B6D527"
             >
-              25 , Jalan Suria Perdana ,Taman Suria , Simpang Renggam ,Johor.
+              25 , Jalan Suria Perdana ,Taman Suria , 86200 Simpang Renggam
+              ,Johor.
             </a>
           </p>
           <PhoneIcon />

@@ -13,20 +13,24 @@ function Work() {
   return (
     <>
       <div className="workContainer" data-aos="fade-up">
-        <h1 className="title">Some of The Best Works</h1>
-        <Carousel>
-          {workData.map((workData, id) => (
-            <Carousel.Item key={id}>
-              <img
-                className="d-block w-100"
-                src={workData.src}
-                alt={workData.title}
-                height="500px"
-              />
-            </Carousel.Item>
-          ))}
-        </Carousel>
-        <h6 className="title">Or view our project list</h6>
+        <div className="carousel">
+          <h1 className="title">Our Best Works</h1>
+          <Carousel>
+            {workData.map((workData, id) => (
+              <Carousel.Item key={id}>
+                <img
+                  className="d-block w-100"
+                  src={workData.src}
+                  alt={workData.title}
+                />
+              </Carousel.Item>
+            ))}
+          </Carousel>
+        </div>
+
+        <h6 style={{ textAlign: "center", marginTop: "50px" }}>
+          Or view our project list
+        </h6>
 
         <CardDeck style={{ justifyContent: "center" }}>
           {projectData.map((projectData, id) => (
@@ -36,7 +40,11 @@ function Work() {
                 style={{ color: "black", textDecoration: "none" }}
               >
                 <Card className="card">
-                  <Card.Img variant="top" src={`${projectData.src}`} />
+                  <Card.Img
+                    variant="top"
+                    src={`${projectData.src}`}
+                    height="270px"
+                  />
                   <Card.Body>
                     <Card.Title>{projectData.albumTitle}</Card.Title>
                   </Card.Body>

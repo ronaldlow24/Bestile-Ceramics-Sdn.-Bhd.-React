@@ -1,36 +1,11 @@
 import "./Home.css";
 //for animation on scroll
 import "./AOS";
-import { makeStyles } from "@material-ui/core/styles";
-import GridList from "@material-ui/core/GridList";
-import GridListTile from "@material-ui/core/GridListTile";
-import GridListTileBar from "@material-ui/core/GridListTileBar";
-import { Link } from "react-router-dom";
-import workData from "./workData";
+import { Player } from "@lottiefiles/react-lottie-player";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: "flex",
-    flexWrap: "wrap",
-    justifyContent: "space-around",
-    overflow: "hidden",
-  },
-  gridList: {
-    flexWrap: "nowrap",
-    // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
-    transform: "translateZ(0)",
-  },
-  title: {
-    color: "black",
-  },
-  titleBar: {
-    background: "transparent",
-  },
-}));
+import { Link } from "react-router-dom";
 
 function Home() {
-  const classes = useStyles();
-
   const imgURL =
     "https://contentgrid.thdstatic.com/hdus/en_US/DTCCOMNEW/Articles/types-of-flooring-hero-A.jpg";
 
@@ -129,7 +104,7 @@ function Home() {
           </div>
           <div className="home-item-item">
             <div>
-              <h6 className="title">Our Specialty</h6>
+              <h6 className="title">Our Services</h6>
               <p className="paragraph">
                 Our wide-range of flooring options is suitable for both
                 residential and commercial properties.
@@ -139,25 +114,22 @@ function Home() {
         </div>
         <div className="home-item" data-aos="fade-up">
           <div className="home-item-item">
-            <div style={{ width: "100vw" }}>
-              <h6 className="title">Our Client</h6>
-
-              <div className={classes.root}>
-                <GridList className={classes.gridList} cols={2.5}>
-                  {workData.map((tile, id) => (
-                    <GridListTile key={id}>
-                      <img src={tile.src} alt={tile.title} />
-                      <GridListTileBar
-                        title={tile.title}
-                        classes={{
-                          root: classes.titleBar,
-                          title: classes.title,
-                        }}
-                      />
-                    </GridListTile>
-                  ))}
-                </GridList>
-              </div>
+            <div>
+              <p
+                style={{
+                  fontFamily: `"Lucida Console", "Courier New", monospace`,
+                }}
+              >
+                <Link to="/contact">Contact us</Link> for more information
+              </p>
+              <Link to="/contact">
+                <Player
+                  autoplay
+                  loop
+                  src="https://assets3.lottiefiles.com/packages/lf20_IG1Hp6.json"
+                  style={{ height: "300px", width: "300px" }}
+                ></Player>
+              </Link>
             </div>
           </div>
         </div>

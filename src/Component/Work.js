@@ -3,6 +3,7 @@ import "./Work.css";
 import workData from "./workData";
 import projectData from "./projectData";
 
+import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import CardDeck from "react-bootstrap/CardDeck";
 
@@ -20,22 +21,27 @@ function Work() {
                 className="d-block w-100"
                 src={workData.src}
                 alt={workData.title}
-                height="700px"
+                height="500px"
               />
             </Carousel.Item>
           ))}
         </Carousel>
         <h6 className="title">Or view our project list</h6>
 
-        <CardDeck>
+        <CardDeck style={{ justifyContent: "center" }}>
           {projectData.map((projectData, id) => (
             <div key={id}>
-              <Card className="card">
-                <Card.Img variant="top" src={`${projectData.src}`} />
-                <Card.Body>
-                  <Card.Title>{projectData.albumTitle}</Card.Title>
-                </Card.Body>
-              </Card>
+              <Link
+                to={`/project/${projectData.albumID}`}
+                style={{ color: "black", textDecoration: "none" }}
+              >
+                <Card className="card">
+                  <Card.Img variant="top" src={`${projectData.src}`} />
+                  <Card.Body>
+                    <Card.Title>{projectData.albumTitle}</Card.Title>
+                  </Card.Body>
+                </Card>
+              </Link>
             </div>
           ))}
         </CardDeck>

@@ -34,6 +34,7 @@ const Router = () => {
           <Route path="/work" component={Work} exact />
           <Route path="/contact" component={Contact} exact />
           <Route path="/project/:albumID" component={Project} exact />
+          <Route path="*" render={() => <div>404</div>} />
         </Switch>
       </Suspense>
     </>

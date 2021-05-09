@@ -1,7 +1,6 @@
 import "./Home.css";
 //for animation on scroll
 import "./AOS";
-import { Player } from "@lottiefiles/react-lottie-player";
 
 import { Link } from "react-router-dom";
 

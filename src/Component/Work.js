@@ -14,7 +14,7 @@ function Work() {
     <>
       <div className="workContainer" data-aos="fade-up">
         <div className="carousel">
-          <h1 className="title">Our Best Works</h1>
+          <h1 className="title">Our Best Work</h1>
           <Carousel>
             {workData.map((workData, id) => (
               <Carousel.Item key={id}>

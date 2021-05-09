@@ -104,7 +104,7 @@ function Home() {
           </div>
           <div className="home-item-item">
             <div>
-              <h6 className="title">Our Services</h6>
+              <h6 className="title">Our Options</h6>
               <p className="paragraph">
                 Our wide-range of flooring options is suitable for both
                 residential and commercial properties.

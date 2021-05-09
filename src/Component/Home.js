@@ -109,26 +109,8 @@ function Home() {
                 Our wide-range of flooring options is suitable for both
                 residential and commercial properties.
               </p>
-            </div>
-          </div>
-        </div>
-        <div className="home-item" data-aos="fade-up">
-          <div className="home-item-item">
-            <div>
-              <p
-                style={{
-                  fontFamily: `"Lucida Console", "Courier New", monospace`,
-                }}
-              >
-                <Link to="/contact">Contact us</Link> for more information
-              </p>
-              <Link to="/contact">
-                <Player
-                  autoplay
-                  loop
-                  src="https://assets3.lottiefiles.com/packages/lf20_IG1Hp6.json"
-                  style={{ height: "300px", width: "300px" }}
-                ></Player>
+              <Link className="paragraph" to="/contact">
+                Contact us for more information {">"}
               </Link>
             </div>
           </div>

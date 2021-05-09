@@ -33,8 +33,7 @@ const Router = () => {
           <Route path="/" component={Home} exact />
           <Route path="/work" component={Work} exact />
           <Route path="/contact" component={Contact} exact />
-          <Route path="/project/:albumID" component={Project} />
-
+          <Route path="/project/:albumID" component={Project} exact />
         </Switch>
       </Suspense>
     </>

@@ -43,6 +43,7 @@ function Work() {
                   <Card.Img
                     variant="top"
                     src={`${projectData.src}`}
+                    alt={`${projectData.albumTitle}`}
                     height="270px"
                   />
                   <Card.Body>

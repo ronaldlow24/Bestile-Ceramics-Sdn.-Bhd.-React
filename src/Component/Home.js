@@ -14,9 +14,9 @@ function Home() {
         <div className="home-item" data-aos="fade-up">
           <div className="home-item-item">
             <div>
-              <h6 className="title">
+              <h1 className="title">
                 WE PROVIDE ULTIMATE FLOORING AND PAVING SERVICES.
-              </h6>
+              </h1>
               <p to="/work" className="paragraph">
                 Bestile Ceramics is the number one flooring company in Johor. We
                 make it a priority to offer flexible services to accommodate
@@ -51,10 +51,10 @@ function Home() {
         >
           <div className="home-item-item">
             <div style={{ color: "white" }}>
-              <h6 className="title">
+              <h1 className="title">
                 We are specialist in tile, stone, home deco, renovation, and
                 project.
-              </h6>
+              </h1>
               <p className="paragraph">
                 As the leading flooring solutions provider in Johor, we strives
                 to provide products of the highest quality to our customers.
@@ -103,7 +103,7 @@ function Home() {
           </div>
           <div className="home-item-item">
             <div>
-              <h6 className="title">Our Options</h6>
+              <h1 className="title">Our Options</h1>
               <p className="paragraph">
                 Our wide-range of flooring options is suitable for both
                 residential and commercial properties.

@@ -35,22 +35,33 @@ function Header() {
               HOME
             </Nav.Link>
 
+            <Nav.Link as={Link} to="/product">
+              PRODUCT
+            </Nav.Link>
+
             <Nav.Link as={Link} to="/work">
               WORK
             </Nav.Link>
 
-            <NavDropdown title="PROJECT LINK" id="collasible-nav-dropdown"  alignRight  onClick={(e) => e.stopPropagation()}>
+            <NavDropdown
+              title="PROJECT LINK"
+              id="collasible-nav-dropdown"
+              alignRight
+              onClick={(e) => e.stopPropagation()}
+            >
               <div onClick={() => setExpanded(false)}>
-
-              {projectData.map((projectData, id) => (
-                <div key={id}>
-                  <NavDropdown.Item  as={Link} to={`/project/${projectData.albumID}`}>{projectData.albumTitle}</NavDropdown.Item>
-                  <NavDropdown.Divider />
-                </div>
-              ))}
+                {projectData.map((projectData, id) => (
+                  <div key={id}>
+                    <NavDropdown.Item
+                      as={Link}
+                      to={`/project/${projectData.albumID}`}
+                    >
+                      {projectData.albumTitle}
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                  </div>
+                ))}
               </div>
-        
-              
             </NavDropdown>
 
             <Nav.Link as={Link} to="/contact">

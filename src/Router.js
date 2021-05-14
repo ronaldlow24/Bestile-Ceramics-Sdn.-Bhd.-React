@@ -9,6 +9,7 @@ const Home = lazy(() => import("./Component/Home"));
 const Work = lazy(() => import("./Component/Work"));
 const Contact = lazy(() => import("./Component/Contact"));
 const Project = lazy(() => import("./Component/Project"));
+const Product = lazy(() => import("./Component/Product"));
 
 const useStyles = makeStyles((theme) => ({
   backdrop: {
@@ -33,6 +34,8 @@ const Router = () => {
           <Route path="/" component={Home} exact />
           <Route path="/work" component={Work} exact />
           <Route path="/contact" component={Contact} exact />
+          <Route path="/product" component={Product} exact />
+
           <Route path="/project/:albumID" component={Project} exact />
           <Route path="*" render={() => <div>404</div>} />
         </Switch>

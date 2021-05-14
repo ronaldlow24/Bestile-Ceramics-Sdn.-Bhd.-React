@@ -16,7 +16,7 @@ function Contact() {
           <p>We're open for any suggestion or just to have a chat.</p>
           <HomeIcon />
 
-          <h6>Address</h6>
+          <h6>Show Room Address</h6>
           <p>
             <a
               style={{ color: "white", textDecoration: "underline" }}

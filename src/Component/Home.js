@@ -15,12 +15,12 @@ function Home() {
           <div className="home-item-item">
             <div>
               <h1 className="title">
-                WE PROVIDE ULTIMATE FLOORING AND PAVING SERVICES.
+                WE PROVIDE ULTIMATE FLOORING AND PAVING SERVICES IN JOHOR.
               </h1>
               <p to="/work" className="paragraph">
-                Bestile Ceramics is the number one flooring company in Johor. We
-                make it a priority to offer flexible services to accommodate
-                your needs
+                Bestile Ceramics is the number one flooring company in JB, Johor
+                Bahru. We make it a priority to offer flexible services to
+                accommodate your needs
               </p>
               <Link to="/work" className="paragraph">
                 Check out our best work{" >"}

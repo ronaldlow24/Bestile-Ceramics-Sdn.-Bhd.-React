@@ -5,6 +5,7 @@ import "./AOS";
 import { Link } from "react-router-dom";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import Telegram from "@material-ui/icons/Telegram";
+import WorkIcon from "@material-ui/icons/Work";
 
 function Home() {
   const imgURL =
@@ -114,14 +115,22 @@ function Home() {
                   style={{ borderRight: "3px solid black" }}
                 >
                   <Link to="/product">
-                    <ShoppingCartIcon fontSize="large" />
+                    <ShoppingCartIcon fontSize="inherit" />
                     Products
                   </Link>
                 </div>
-
+                <div
+                  className="optionBox"
+                  style={{ borderRight: "3px solid black" }}
+                >
+                  <Link to="/work">
+                    <WorkIcon fontSize="inherit" />
+                    Work
+                  </Link>
+                </div>
                 <div className="optionBox">
                   <Link to="/contact">
-                    <Telegram fontSize="large" />
+                    <Telegram fontSize="inherit" />
                     Contact Us
                   </Link>
                 </div>

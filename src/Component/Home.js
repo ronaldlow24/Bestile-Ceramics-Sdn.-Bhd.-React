@@ -109,7 +109,7 @@ function Home() {
                 product. Check out our page to learn more.
               </p>
 
-              <div className="optionContainer">
+              <div className="optionContainer" data-aos="flip-left">
                 <div
                   className="optionBox"
                   style={{ borderRight: "3px solid black" }}

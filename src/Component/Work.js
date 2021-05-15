@@ -6,15 +6,48 @@ import projectData from "./projectData";
 import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import CardDeck from "react-bootstrap/CardDeck";
+import Typography from "@material-ui/core/Typography";
+import { makeStyles } from "@material-ui/core/styles";
+import Container from "@material-ui/core/Container";
 
 import "./AOS";
 
+const useStyles = makeStyles((theme) => ({
+  heroContent: {
+    background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
+    padding: theme.spacing(8, 0, 6),
+  },
+}));
+
 function Work() {
+  const classes = useStyles();
+
   return (
     <>
+      <div className={classes.heroContent}>
+        <Container maxWidth="sm">
+          <Typography
+            component="h1"
+            variant="h2"
+            align="center"
+            color="textPrimary"
+            gutterBottom
+          >
+            Our Best Work
+          </Typography>
+          <Typography
+            variant="h5"
+            align="center"
+            color="textSecondary"
+            paragraph
+          >
+            Bestile Ceramics's work always bring satisfaction.
+          </Typography>
+        </Container>
+      </div>
+
       <div className="workContainer" data-aos="fade-up">
         <div className="carousel">
-          <h1 className="title">Our Best Work</h1>
           <Carousel>
             {workData.map((workData, id) => (
               <Carousel.Item key={id}>

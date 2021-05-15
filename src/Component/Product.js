@@ -12,8 +12,9 @@ import Container from "@material-ui/core/Container";
 
 const useStyles = makeStyles((theme) => ({
   heroContent: {
-    background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
+    backgroundImage: 'url("/img/stone.jpg")',
     padding: theme.spacing(8, 0, 6),
+    color: "white",
   },
 
   cardGrid: {
@@ -48,21 +49,10 @@ function Product() {
         {/* Hero unit */}
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
-            <Typography
-              component="h1"
-              variant="h2"
-              align="center"
-              color="textPrimary"
-              gutterBottom
-            >
+            <Typography component="h1" variant="h2" align="center" gutterBottom>
               Product
             </Typography>
-            <Typography
-              variant="h5"
-              align="center"
-              color="textSecondary"
-              paragraph
-            >
+            <Typography variant="h5" align="center" paragraph>
               Bestile Ceramics's product is best known for its competitive price
               and high quality.
             </Typography>

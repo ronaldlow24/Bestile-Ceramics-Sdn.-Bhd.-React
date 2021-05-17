@@ -1,7 +1,4 @@
-.title {
-  margin-top: 50px;
-  text-align: center;
-}
+
 
 .workContainer {
   margin-top: 5%;
@@ -11,25 +8,16 @@
 }
 
 .carousel img {
-  height: 90vh;
+  height: 80vh;
 }
 
-.card {
-  margin-top: 20px;
-  max-width: 20vw;
-  text-align: center;
-}
 
 @media only screen and (max-width: 600px) {
   .workContainer {
     margin: unset;
+    margin-top: 5%;
+
   }
-  .card {
-    min-width: 100vw;
-  }
+ 
 }
 
-.card:hover {
-  box-shadow: 0 0 5px 2px;
-  cursor: pointer;
-}

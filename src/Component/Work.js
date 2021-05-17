@@ -4,11 +4,14 @@ import workData from "./workData";
 import projectData from "./projectData";
 
 import { Link } from "react-router-dom";
-import Card from "react-bootstrap/Card";
-import CardDeck from "react-bootstrap/CardDeck";
+import Card from "@material-ui/core/Card";
+import CardContent from "@material-ui/core/CardContent";
+import CardMedia from "@material-ui/core/CardMedia";
+import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
+
 
 import "./AOS";
 
@@ -17,6 +20,25 @@ const useStyles = makeStyles((theme) => ({
     backgroundImage: 'url("/img/brick.jpg")',
     padding: theme.spacing(8, 0, 6),
     color: "white",
+  },
+  cardGrid: {
+    paddingTop: theme.spacing(5),
+    paddingBottom: theme.spacing(8),
+  },
+  card: {
+    height: "100%",
+    display: "flex",
+    flexDirection: "column",
+    "&:hover": {
+      boxShadow: "0 0 5px 2px",
+    },
+  },
+
+  cardMedia: {
+    paddingTop: "56.25%", // 16:9
+  },
+  cardContent: {
+    flexGrow: 1,
   },
 }));
 
@@ -51,32 +73,36 @@ function Work() {
           </Carousel>
         </div>
 
-        <h6 style={{ textAlign: "center", marginTop: "50px" }}>
+        <h6 style={{ textAlign: "center", marginTop: "50px", fontSize:"1.3rem" }}>
           Or view our project list
         </h6>
 
-        <CardDeck style={{ justifyContent: "center" }}>
-          {projectData.map((projectData, id) => (
-            <div key={id}>
-              <Link
-                to={`/project/${projectData.albumID}`}
+        <Container className={classes.cardGrid} maxWidth="md">
+          {/* End hero unit */}
+          <Grid container spacing={4}>
+            {projectData.map((project, key) => (
+              <Grid item key={key} xs={12} sm={6} md={4}>
+                <Link
+                to={`/project/${project.albumID}`}
                 style={{ color: "black", textDecoration: "none" }}
               >
-                <Card className="card">
-                  <Card.Img
-                    variant="top"
-                    src={`${projectData.src}`}
-                    alt={`${projectData.albumTitle}`}
-                    height="270px"
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image={project.src}
+                    title={project.albumTitle}
                   />
-                  <Card.Body>
-                    <Card.Title>{projectData.albumTitle}</Card.Title>
-                  </Card.Body>
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      {project.albumTitle}
+                    </Typography>
+                  </CardContent>
                 </Card>
-              </Link>
-            </div>
-          ))}
-        </CardDeck>
+                </Link>
+              </Grid>
+            ))}
+          </Grid>
+        </Container>
       </div>
     </>
   );

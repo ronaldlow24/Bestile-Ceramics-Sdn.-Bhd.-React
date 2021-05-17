@@ -22,11 +22,8 @@ function Project() {
     <>
       <div className="projectContainer" data-aos="fade-up">
         <h1 className="title">
-          Link not available, please check out our facebook page for more
-          information.
+          Redirecting...
         </h1>
-
-        {/* <Gallery photos={galleryData} direction={"column"} /> */}
       </div>
     </>
   );

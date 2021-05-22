@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 import React, { useEffect } from "react";
 
-import "./AOS";
+import "./Component/AOS.js";
 
 function Project() {
   let { albumID } = useParams();

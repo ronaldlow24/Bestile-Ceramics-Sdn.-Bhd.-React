@@ -13,7 +13,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 
 
-import "./AOS";
+import "./Component/AOS.js";
 
 const useStyles = makeStyles((theme) => ({
   heroContent: {

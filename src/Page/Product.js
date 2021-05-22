@@ -1,5 +1,5 @@
 //for animation on scroll
-import "./AOS";
+import "./Component/AOS.js";
 
 import React from "react";
 import Card from "@material-ui/core/Card";

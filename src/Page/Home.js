@@ -1,6 +1,6 @@
 import "./Home.css";
 //for animation on scroll
-import "./AOS";
+import "./Component/AOS.js";
 
 import { Link } from "react-router-dom";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";

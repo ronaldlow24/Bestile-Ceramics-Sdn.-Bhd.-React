@@ -9,7 +9,7 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
-import productData from "./productData.js";
+import productData from "../Data/productData";
 
 const useStyles = makeStyles((theme) => ({
   heroContent: {

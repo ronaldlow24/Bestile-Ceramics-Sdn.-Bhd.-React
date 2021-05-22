@@ -1,7 +1,7 @@
 import Carousel from "react-bootstrap/Carousel";
 import "./Work.css";
-import workData from "./workData";
-import projectData from "./projectData";
+import workData from "../Data/workData";
+import projectData from "../Data/projectData";
 
 import { Link } from "react-router-dom";
 import Card from "@material-ui/core/Card";

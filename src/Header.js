@@ -5,7 +5,7 @@ import { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import projectData from "./Component/projectData";
+import projectData from "./Data/projectData";
 
 function Header() {
   const [expanded, setExpanded] = useState(false);

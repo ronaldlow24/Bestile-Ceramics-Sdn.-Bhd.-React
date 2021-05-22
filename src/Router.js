@@ -4,12 +4,12 @@ import Backdrop from "@material-ui/core/Backdrop";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import { makeStyles } from "@material-ui/core/styles";
 
-// Components
-const Home = lazy(() => import("./Component/Home"));
-const Work = lazy(() => import("./Component/Work"));
-const Contact = lazy(() => import("./Component/Contact"));
-const Project = lazy(() => import("./Component/Project"));
-const Product = lazy(() => import("./Component/Product"));
+// Page
+const Home = lazy(() => import("./Page/Home"));
+const Work = lazy(() => import("./Page/Work"));
+const Contact = lazy(() => import("./Page/Contact"));
+const Project = lazy(() => import("./Page/Project"));
+const Product = lazy(() => import("./Page/Product"));
 
 const useStyles = makeStyles((theme) => ({
   backdrop: {
@@ -35,7 +35,6 @@ const Router = () => {
           <Route path="/work" component={Work} exact />
           <Route path="/contact" component={Contact} exact />
           <Route path="/product" component={Product} exact />
-
           <Route path="/project/:albumID" component={Project} exact />
           <Route path="*" render={() => <div>404</div>} />
         </Switch>

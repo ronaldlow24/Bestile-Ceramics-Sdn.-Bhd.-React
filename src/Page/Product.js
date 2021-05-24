@@ -10,6 +10,7 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import productData from "../Data/productData";
+import BuildIcon from "@material-ui/icons/Build";
 
 const useStyles = makeStyles((theme) => ({
   heroContent: {
@@ -57,8 +58,14 @@ function Product() {
             </Typography>
           </Container>
         </div>
-        <Container className={classes.cardGrid} maxWidth="md">
-          {/* End hero unit */}
+        {/* End hero unit */}
+        <p
+          style={{ textAlign: "center", paddingTop: "10rem", fontSize: "2em" }}
+        >
+          Coming Soon..
+          <BuildIcon />
+        </p>
+        {/* <Container className={classes.cardGrid} maxWidth="md">
           <Grid container spacing={4}>
             {productData.map((product, key) => (
               <Grid item key={key} xs={12} sm={6} md={4}>
@@ -78,7 +85,7 @@ function Product() {
               </Grid>
             ))}
           </Grid>
-        </Container>
+        </Container> */}
       </main>
     </React.Fragment>
   );

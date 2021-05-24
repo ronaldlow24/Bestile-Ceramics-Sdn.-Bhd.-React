@@ -112,7 +112,7 @@ function Home() {
               <div className="optionContainer" data-aos="flip-left">
                 <div
                   className="optionBox"
-                  style={{ borderRight: "3px solid black" }}
+                  style={{ borderRight: "0.125rem solid black" }}
                 >
                   <Link to="/product">
                     <ShoppingCartIcon fontSize="inherit" />
@@ -121,7 +121,7 @@ function Home() {
                 </div>
                 <div
                   className="optionBox"
-                  style={{ borderRight: "3px solid black" }}
+                  style={{ borderRight: "0.125rem solid black" }}
                 >
                   <Link to="/work">
                     <WorkIcon fontSize="inherit" />

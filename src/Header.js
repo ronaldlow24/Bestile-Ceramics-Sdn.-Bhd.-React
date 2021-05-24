@@ -21,7 +21,9 @@ function Header() {
         <Navbar.Brand as={Link} to="/">
           <img src="/img/logo.jpg" alt="Logo" className="nav-logo" />
         </Navbar.Brand>
-        <Navbar.Brand>Bestile Ceramics</Navbar.Brand>
+        <Navbar.Brand style={{ fontSize: "1rem" }}>
+          Bestile Ceramics
+        </Navbar.Brand>
 
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"

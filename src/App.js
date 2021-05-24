@@ -11,7 +11,7 @@ function App() {
       <Header />
       <Router />
       <Footer />
-      <ScrollToTop smooth />
+      <ScrollToTop smooth style={{ zIndex: "9999" }} />
     </BrowserRouter>
   );
 }

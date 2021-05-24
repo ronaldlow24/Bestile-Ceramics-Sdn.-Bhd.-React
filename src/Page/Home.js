@@ -1,8 +1,11 @@
 import "./Home.css";
 //for animation on scroll
-import "./AOS";
+import "./Component/AOS.js";
 
 import { Link } from "react-router-dom";
+import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+import Telegram from "@material-ui/icons/Telegram";
+import WorkIcon from "@material-ui/icons/Work";
 
 function Home() {
   const imgURL =
@@ -28,12 +31,6 @@ function Home() {
             </div>
           </div>
           <div className="home-item-item">
-            {/* <Player
-              autoplay
-              loop
-              src="https://assets9.lottiefiles.com/packages/lf20_3giqgq7t.json"
-              style={{ height: "300px", width: "300px" }}
-            ></Player> */}
             <img
               src={`${imgURL}`}
               alt="ERROR"
@@ -56,8 +53,9 @@ function Home() {
                 project.
               </h1>
               <p className="paragraph">
-                As the leading flooring solutions provider in Johor, we strives
-                to provide products of the highest quality to our customers.
+                As the leading flooring solutions provider in JB, Johor Bahru,
+                Johor, we strives to provide products of the highest quality to
+                our customers.
               </p>
             </div>
           </div>
@@ -67,7 +65,7 @@ function Home() {
           style={{ flexWrap: "wrap-reverse" }}
           data-aos="fade-up"
         >
-          <div className="home-item-item" style={{ minWidth: "60%" }}>
+          <div className="home-item-item">
             <div className="products">
               <div className="product" data-aos="zoom-in">
                 <img
@@ -103,14 +101,40 @@ function Home() {
           </div>
           <div className="home-item-item">
             <div>
-              <h1 className="title">Our Options</h1>
+              <h1 className="title">Our Services</h1>
               <p className="paragraph">
-                Our wide-range of flooring options is suitable for both
-                residential and commercial properties.
+                We provide flooring installation through wide-range of flooring
+                options, suitable for both residential and commercial
+                properties. We also sell flooring ingredients as individual
+                product. Check out our page to learn more.
               </p>
-              <Link className="paragraph" to="/contact">
-                Contact us for more information {">"}
-              </Link>
+
+              <div className="optionContainer" data-aos="flip-left">
+                <div
+                  className="optionBox"
+                  style={{ borderRight: "0.125rem solid black" }}
+                >
+                  <Link to="/product">
+                    <ShoppingCartIcon fontSize="inherit" />
+                    Products
+                  </Link>
+                </div>
+                <div
+                  className="optionBox"
+                  style={{ borderRight: "0.125rem solid black" }}
+                >
+                  <Link to="/work">
+                    <WorkIcon fontSize="inherit" />
+                    Work
+                  </Link>
+                </div>
+                <div className="optionBox">
+                  <Link to="/contact">
+                    <Telegram fontSize="inherit" />
+                    Contact Us
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>

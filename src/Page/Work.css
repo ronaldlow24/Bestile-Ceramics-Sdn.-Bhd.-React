@@ -1,17 +1,23 @@
-.title {
-  margin-top: 50px;
-  text-align: center;
-}
 
-.projectContainer {
+
+.workContainer {
   margin-top: 5%;
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 10%;
 }
 
-@media only screen and (max-width: 600px) {
-  .projectContainer {
-    margin: unset;
-  }
+.carousel img {
+  height: 80vh;
 }
+
+
+@media only screen and (max-width: 600px) {
+  .workContainer {
+    margin: unset;
+    margin-top: 5%;
+
+  }
+ 
+}
+

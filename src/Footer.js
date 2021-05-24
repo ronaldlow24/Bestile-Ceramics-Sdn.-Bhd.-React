@@ -10,7 +10,7 @@ import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 function Footer() {
   return (
     <>
-      <Navbar className="nav-bar-bottom" sticky="bottom">
+      <Navbar className="nav-bar-bottom" fixed="bottom">
         <Nav className="m-auto">
           <Nav.Link
             style={{ color: "white" }}

@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 import React, { useEffect } from "react";
 
-import "./AOS";
+import "./Component/AOS.js";
 
 function Project() {
   let { albumID } = useParams();
@@ -22,11 +22,8 @@ function Project() {
     <>
       <div className="projectContainer" data-aos="fade-up">
         <h1 className="title">
-          Link not available, please check out our facebook page for more
-          information.
+          Redirecting...
         </h1>
-
-        {/* <Gallery photos={galleryData} direction={"column"} /> */}
       </div>
     </>
   );

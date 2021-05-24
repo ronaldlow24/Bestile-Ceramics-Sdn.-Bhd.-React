@@ -1,6 +1,6 @@
 import "./Contact.css";
 //for animation on scroll
-import "./AOS";
+import "./Component/AOS";
 
 //icon
 import HomeIcon from "@material-ui/icons/Home";

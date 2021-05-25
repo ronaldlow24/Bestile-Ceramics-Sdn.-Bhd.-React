@@ -43,7 +43,7 @@ function Home() {
           className="home-item"
           data-aos="fade-up"
           style={{
-            backgroundImage: `url("https://i.imgur.com/bLRSUik.png")`,
+            backgroundImage: `url("/img/woodfloor.png")`,
           }}
         >
           <div className="home-item-item">

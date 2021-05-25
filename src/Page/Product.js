@@ -61,7 +61,11 @@ function Product() {
         </div>
         {/* End hero unit */}
         <p
-          style={{ textAlign: "center", paddingTop: "10rem", fontSize: "2em" }}
+          style={{
+            textAlign: "center",
+            fontSize: "2rem",
+            marginTop: "1.5em",
+          }}
         >
           Coming Soon..
           <BuildIcon />

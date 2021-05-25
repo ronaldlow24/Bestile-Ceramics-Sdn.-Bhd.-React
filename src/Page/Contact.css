@@ -1,6 +1,6 @@
 .contactContainer {
   display: flex;
-  min-height: 100vh;
+  height: calc(100vh);
   justify-content: center;
   align-items: center;
   background: url("https://www.thespruce.com/thmb/0EbjR2PRHu-1BnyuZwo2H4QuqFQ=/1000x1000/smart/filters:no_upscale()/the-best-flooring-for-senior-citizens-1314944_laminate-4f1c2464ba6f4ef09b47845661ec923a.jpg");
@@ -14,7 +14,7 @@
   background-color: rgba(255, 255, 255, 0.15);
 
   backdrop-filter: blur(20px);
-  padding: 5%;
+  padding: 2%;
   color: white;
 }
 
